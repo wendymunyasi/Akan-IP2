@@ -1,0 +1,28 @@
+h1 {
+    margin: 30px 0px;
+    font-size: 42px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 20px;
+}
+.date-picker {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    margin: 30px auto;
+    cursor: pointer;
+    user-select: none;
+}
+.date-picker .selected-date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-picker .dates {
+    display: none;
+}
