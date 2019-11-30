@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css"
 </head>
 <body>
     <div class="container">
@@ -14,13 +15,17 @@
             <p> This is a web application that uses your birthday date to calculate <thead>
                 day of the week that you were born and depending on your gender it outputs 
                 your Akan name</thead></p>
-        </div>
-        <form>
-            <input type="radio" name="gender" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female">Female</label>
-        </form> 
+        </div> 
+        <div class="date-picker">
+            <div class="selected-date"></div>
+            <div class="dates">
+                <div class="month">
+                    <div class="arrows previous-month">&lt;</div>
+                    <div class="month"></div>
+                    <div class="arrows next-month">&gt;</div>
+                </div>
+            </div>
+        </div>  
     </div>
     
 </body>

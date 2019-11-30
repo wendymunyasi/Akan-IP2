@@ -1,8 +1,42 @@
-<form>
-    <label for="city">City:</label>
-    <select name="city" id="city">
-        <option value="sydney">Sydney</option>
-        <option value="melbourne">Melbourne</option>
-        <option value="cromwell">Cromwell</option>
-    </select>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <div class="calendar" id="calendar">
+                <div class="calendar-btn month-btn" onclick="$('#months').toggle('fast')">
+                    <span id="curMonth"></span>
+                    <div id="months" class="months dropdown"></div>
+                </div>
+            
+                <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+                    <span id="curYear"></span>
+                    <div id="years" class="years dropdown"></div>
+                </div>
+            
+                <div class="clear"></div>
+            
+                <div class="calendar-dates">
+                    <div class="days">
+                        <div class="day label">SUN</div>
+                        <div class="day label">MON</div>
+                        <div class="day label">TUE</div>
+                        <div class="day label">WED</div>
+                        <div class="day label">THUR</div>
+                        <div class="day label">FRI</div>
+                        <div class="day label">SAT</div>
+            
+                        <div class="clear"></div>
+                    </div>
+            
+                    <div id="calendarDays" class="days">
+                    </div>
+                </div>
+            </div>
+            
+</body>
