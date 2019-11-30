@@ -13,8 +13,12 @@ p {
     max-width: 300px;
     height: 60px;
     margin: 30px auto;
+    background-color: aquamarine;
     cursor: pointer;
     user-select: none;
+}
+.date-picker:hover {
+    background-color: lightgray;
 }
 .date-picker .selected-date {
     width: 100%;
@@ -25,4 +29,9 @@ p {
 }
 .date-picker .dates {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: blue;
 }
