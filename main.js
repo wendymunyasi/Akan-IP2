@@ -86,7 +86,16 @@ function populateDates (e) {
 
         day_element.addEventListener('click', function() {
             selectedDate = new Date(year + '-' + (month + 1) + '-' + (i+1));
+            selectedDay = (i + 1);
+            selectedMonth = month;
+            selectedYear = year;
+
+            selected_date_element.textContent = formatDate(selectedDate);
+            selected_date_element.dataset.value = selectedDate;
+
+            populateDates();
         });
+        
 
         days_element.appendChild(day_element);
 
