@@ -18,7 +18,9 @@ let selectedDay = day;
 let selectedMonth = month;
 let selectedYear = year;
 
-mth_element.textContent = months[month] + ' ' + year
+mth_element.textContent = months[month] + ' ' + year;
+
+selected_date_element.textContent = formatDate(date);
 
 
  
@@ -48,11 +50,13 @@ function goToNextMonth (e) {
 function goToPrevMonth (e) {
     month--;
     if (month < 0) {
-        month=11;
+        month = 11;
         year--;
     }
     mth_element.textContent = months[month] + ' ' + year;
 }
+
+
 
 //HELPER FUNCTIONS
 function checkEvenPathForClass (path, selector) {
@@ -64,4 +68,19 @@ function checkEvenPathForClass (path, selector) {
     }
     
     return false;
+}
+
+function formatDate (d) {
+    let day = d.getDate();
+    if (day < 10) {
+        day = '0' + day;
+    }
+
+    let month = d.getMonth() + 1;
+    if (month < 10) {
+        month = '0' + day;
+    }
+    let year = d.getFullYear();
+
+    return day + ' / ' + month + ' / ' + year;
 }
