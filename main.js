@@ -4,6 +4,9 @@ const dates_element = document.querySelector('.date-picker .dates');
 const mth_element = document.querySelector('.date-picker .dates .month .mth');
 const next_mth_element = document.querySelector('.date-picker .dates .month .next-mth');
 const previous_mth_element = document.querySelector('.date-picker .dates .month .previous-mth');
+const days_element = document.querySelector('.date-picker .dates .days');
+
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 
 date_picker_element.addEventListener('click', toggleDatePicker);
