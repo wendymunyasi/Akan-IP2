@@ -20,18 +20,24 @@
             <label for="century" class="labels">Century</label>
             <input type="number" class="form-century" placeholder="Enter the century" id="century" required  min="0" max="20">
          </div>
+         <br>
          <div class="year">
-            <label for="year" class="labels">Century</label>
+            <label for="year" class="labels">Year</label>
             <input type="number" class="form-year" placeholder="Enter the year" id="year">
          </div>
+         <br>
          <div class="month-date">
             <label for="month-date" class="labels">Day of month</label>
-            <input type="number" placeholder="Enter the day of the month" class="form-day" id="month-date" required min="0" max="12">
+            <input type="number" placeholder="Enter month date" class="form-day" id="month-date" required min="0" max="12">
          </div>
+         <br>
          <form class="radio-button">
             <input type="radio" class="gender labels" value="male">Male
             <input type="radio" class="genders labels" value="female">Female
         </form>
+        <br>
+        <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+        <h1 id="result"></h1>
 
 
         <script src="main2.js"></script>
