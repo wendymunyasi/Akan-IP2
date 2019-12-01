@@ -5,30 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AKAN</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    
-<h1><strong>AKAN PROJECT</strong></h1>
-<p> This is a web application that uses your birthday date to calculate <thead>
-    day of the week that you were born and depending on your gender it outputs 
-    your Akan name.</thead></p>
-         
-<div class="date-picker">
-    <div class="selected-date">30 / 07 / 2019</div>
-
-    <div class="dates">
-        <div class="month">
-            <div class="arrows prev-mth">&lt;</div>
-            <div class="mth">July 2019</div>
-            <div class="arrows next-mth"></div>&gt;
+    <div class="container">
+        <div class="jumbotron">    
+            <h1><strong>AKAN PROJECT</strong></h1>
         </div>
+        <p> This is a web application that uses your birthday date to calculate <thead>
+            day of the week that you were born and depending on your gender it outputs 
+            your Akan name.</thead></p>
+         <div class="century">
+            <label for="century" class="labels">Century</label>
+            <input type="number" class="form-century" placeholder="Enter the century" id="century" required  min="0" max="20">
+         </div>
+         <div class="year">
+            <label for="year" class="labels">Century</label>
+            <input type="number" class="form-year" placeholder="Enter the year" id="year">
+         </div>
+         <div class="month-date">
+            <label for="month-date" class="labels">Day of month</label>
+            <input type="number" placeholder="Enter the day of the month" class="form-day" id="month-date" required min="0" max="12">
+         </div>
+         <form class="radio-button">
+            <input type="radio" class="gender labels" value="male">Male
+            <input type="radio" class="genders labels" value="female">Female
+        </form>
 
-        <div class="days"></div>
-    </div>
-</div>  
 
-    <script src="main.js"></script>
-    
+        <script src="main2.js"></script>
+    </div>    
 </body>
 </html>
