@@ -55,6 +55,8 @@ function goToPrevMonth (e) {
         year--;
     }
     mth_element.textContent = months[month] + ' ' + year;
+    selected_date_element.dataset.value = selectedDate;
+
     populateDates();
 }
 
@@ -123,8 +125,9 @@ function formatDate (d) {
 
     let month = d.getMonth() + 1;
     if (month < 10) {
-        month = '0' + day;
+        month = '0' + month;
     }
+
     let year = d.getFullYear();
 
     return day + ' / ' + month + ' / ' + year;
