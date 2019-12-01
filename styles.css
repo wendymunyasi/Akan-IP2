@@ -81,3 +81,14 @@ h1 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
+
+.date-picker .dates .days .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.date-picker .dates .days .day .selected {
+    background-color: lightpink;
+}
