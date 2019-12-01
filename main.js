@@ -26,6 +26,7 @@ mth_element.textContent = months[month] + ' ' + year
 
 date_picker_element.addEventListener('click', toggleDatePicker);
 next_mth_element.addEventListener('click', goToNextMonth);
+prev_mth_element.addEventListener('click', goToPrevMonth);
 
 //FUNCTIONS
 function toggleDatePicker (e) {
@@ -40,6 +41,15 @@ function goToNextMonth (e) {
     if (month > 11) {
         month=0;
         year++;
+    }
+    mth_element.textContent = months[month] + ' ' + year;
+}
+
+function goToPrevMonth (e) {
+    month--;
+    if (month < 0) {
+        month=11;
+        year--;
     }
     mth_element.textContent = months[month] + ' ' + year;
 }
