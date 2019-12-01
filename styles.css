@@ -78,4 +78,6 @@ h1 {
 
 .date-picker .dates .days {
     height: 200px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
