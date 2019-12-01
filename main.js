@@ -80,6 +80,14 @@ function populateDates (e) {
         day_element.classList.add ('day');
         day_element.textContent = i + 1;
 
+        if (selectedDay == (i + 1) && selectedYear == year && selectedMonth == month) {
+            day_element.classList.add('selected');
+        }
+
+        day_element.addEventListener('click', function() {
+            selectedDate = new Date(year + '-' + (month + 1) + '-' + (i+1));
+        });
+
         days_element.appendChild(day_element);
 
     }
