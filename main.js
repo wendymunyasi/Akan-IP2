@@ -22,7 +22,7 @@ mth_element.textContent = months[month] + ' ' + year;
 
 selected_date_element.textContent = formatDate(date);
 
-
+populateDates();
  
 
 
@@ -45,6 +45,7 @@ function goToNextMonth (e) {
         year++;
     }
     mth_element.textContent = months[month] + ' ' + year;
+    populateDates();
 }
 
 function goToPrevMonth (e) {
@@ -54,6 +55,7 @@ function goToPrevMonth (e) {
         year--;
     }
     mth_element.textContent = months[month] + ' ' + year;
+    populateDates();
 }
 
 function populateDates (e) {
@@ -69,12 +71,16 @@ function populateDates (e) {
     } else if (month == 10) {
         amount_days = 30;
     } else {
-        amount_days = 31
+        amount_days = 31;
     }
 
 
     for (let i = 0; i < amount_days; i++) {
-        const day_element
+        const day_element = document.createElement('div');
+        day_element.classList.add ('day');
+        day_element.textContent = i + 1;
+
+        days_element.appendChild(day_element);
 
     }
 }
