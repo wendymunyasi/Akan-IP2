@@ -56,6 +56,28 @@ function goToPrevMonth (e) {
     mth_element.textContent = months[month] + ' ' + year;
 }
 
+function populateDates (e) {
+    days_element.innerHTML = '';
+    let amount_days = 31;
+
+    if(month == 1) {
+        amount_days = 28;
+    } else if (month == 3) {
+        amount_days = 30;
+    } else if (month == 5) {
+        amount_days = 30;
+    } else if (month == 10) {
+        amount_days = 30;
+    } else {
+        amount_days = 31
+    }
+
+
+    for (let i = 0; i < amount_days; i++) {
+        const day_element
+
+    }
+}
 
 
 //HELPER FUNCTIONS
