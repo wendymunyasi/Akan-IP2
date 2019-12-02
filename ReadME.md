@@ -2,7 +2,7 @@
 [Check it out](https://github.com/wendymunyasi/Akan-IP2/)
 
 ## Description.
-A web application that takes a ``user's birthday``, calculates the ``day of the week`` they were born and then depending on their gender outputs their ``Akan Name``. 
+A web application that takes your birthday, calculates the ``day of the week`` you were born and then depending on your gender outputs your ``Akan Name``. 
 
 ## Author.
  > Wendy Munyasi
