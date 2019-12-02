@@ -4,42 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AKAN</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="styles2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Akan Name</title>
+    
+
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">    
-            <h1><strong>AKAN PROJECT</strong></h1>
-        </div>
-        <p> This is a web application that uses your birthday date to calculate <thead>
-            day of the week that you were born and depending on your gender it outputs 
-            your Akan name.</thead></p>
-         <div class="form">
-            <label for="century" class="labels">Century</label>
-            <input type="number" class="form-century" placeholder="Enter the century" id="century" required  min="0" max="99">
-         <br>
-         <br>
-            <label for="year" class="labels">Year</label>
-            <input type="number" class="form-year" placeholder="Enter the year" id="year">
-         <br>
-         <br>
-            <label for="monthDate" class="labels">Day of month</label>
-            <input type="number" placeholder="Enter month date" class="form-day" id="monthDate" required min="0" max="12">
-         </div>
-         <br>
-         <br>
-         <form class="radio-button">
-            <input type="radio" class="gender labels" value="male" Id="ninos" name="boys">Male
-            <input type="radio" class="genders labels" value="female" id="ninas" name="girls">Female
-        </form>
-        <br>
-        <a href="#result"><button type="button" name="button" class="clickon" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
-        <h1 id="result"></h1>
+    <div class="jumbotron" id="top">
+    <h1>Akan Naming Culture</h1> 
+    <p class="pp">Akan Name comes from a traditional naming system for Ghana.A child's name is determined by factors</br>surrounding his or her birth.For example,the day of their birth or the manner in which</br>they were born may determine which name they get irrespective of their gender</p>
+    </div>
+    <div class="container-fluid">
+        <h3>Filling out the form below will give you your Akan name so c'mon give it a try!</h3>
 
-
-        <script src="main2.js"></script>
-    </div>    
+     <div class="output">
+         <form onsubmit="event.preventDefault()">
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text"
+                required
+                id="year"
+                max="2019"
+                min="1990"
+                placeholder="1980"
+                max-length="4"
+                min-length="4"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="month">Month</label>
+                <input type="text"
+                placeholder="01"
+                id="month"
+                maxlength="2"
+                min="1"
+                max="12"
+                min-length="1"
+                required
+                 class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="day">Day</label>
+                <input type="text"
+                id="day"
+                placeholder="05"
+                min="1"
+                max="31"
+                min-length="1"
+                max-length="2"
+                required
+                 class="form-control">
+            </div>
+            <div class="form-group">
+                    <div>
+					<label for="radio" class="radio-inline">
+					<input
+					type="radio"
+					value="male"
+				    name="gender"
+					id="male"
+					required
+					/>
+					Male </label
+					><br />
+					<label for="radio" class="radio-inline">
+					<input
+					type="radio"
+					value="male"
+					name="gender"
+					id="female"
+					required
+					/>
+					Female
+					</label>
+				  </div>
+                  </div>
+            <button type="submit" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">submit</button>
+            <button type="Reset" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">Reset</button>
+           </form>
+           </div>
+           </div>
+          </div>
+          <footer>
+            <div class="footer">
+            </div>
+          </footer>
+<script src="main.js"></script>
 </body>
 </html>
