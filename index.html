@@ -16,27 +16,26 @@
         <p> This is a web application that uses your birthday date to calculate <thead>
             day of the week that you were born and depending on your gender it outputs 
             your Akan name.</thead></p>
-         <div class="century">
+         <div class="form">
             <label for="century" class="labels">Century</label>
-            <input type="number" class="form-century" placeholder="Enter the century" id="century" required  min="0" max="20">
-         </div>
+            <input type="number" class="form-century" placeholder="Enter the century" id="century" required  min="0" max="99">
          <br>
-         <div class="year">
+         <br>
             <label for="year" class="labels">Year</label>
             <input type="number" class="form-year" placeholder="Enter the year" id="year">
+         <br>
+         <br>
+            <label for="monthDate" class="labels">Day of month</label>
+            <input type="number" placeholder="Enter month date" class="form-day" id="monthDate" required min="0" max="12">
          </div>
          <br>
-         <div class="month-date">
-            <label for="month-date" class="labels">Day of month</label>
-            <input type="number" placeholder="Enter month date" class="form-day" id="month-date" required min="0" max="12">
-         </div>
          <br>
          <form class="radio-button">
             <input type="radio" class="gender labels" value="male" Id="ninos" name="boys">Male
             <input type="radio" class="genders labels" value="female" id="ninas" name="girls">Female
         </form>
         <br>
-        <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+        <a href="#result"><button type="button" name="button" class="clickon" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
         <h1 id="result"></h1>
 
 
