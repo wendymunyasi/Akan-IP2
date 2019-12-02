@@ -8,13 +8,13 @@ A web application that takes your birthday, calculates the ``day of the week`` y
  > Wendy Munyasi
 
  ## Setup.
- git clone https://github.com/wendymunyasi/Akan-IP2.git``
+ git clone https://github.com/wendymunyasi/Akan-IP2.git
  
- ``extract the file``
+ extract the file.
  
- ``cd to the akan directory``
+ cd to the ``akan`` directory.
  
- > ``Open the index.html on your favorite browser``
+ Open the ``index.html`` on your favorite browser.
 
 ## Technologies used.
   * Html5
