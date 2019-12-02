@@ -40,7 +40,7 @@ A web application that takes your birthday, calculates the ``day of the week`` y
 
 
 ## Known Bugs
-* The name generator is not working at all.
+* I haven't encountered any bugs.
 
 ## License
 > MIT License &copy 2019 Wendy. 
