@@ -12,7 +12,7 @@ function getName() {
     var day=parseInt(document.getElementById("day").value);
     var male = document.getElementById("male");
     var female = document.getElementById("female");
-}
+
 
 //validation
 if(day <= 0 ||day > 31)
@@ -29,3 +29,4 @@ if(male.checked==true) {
 } else if (female.checked==true) {
    alert("You were born on " + daysOfWeek[birthDay] + " and your akan name is " + femaleNames[birthDay])
 }
+};
