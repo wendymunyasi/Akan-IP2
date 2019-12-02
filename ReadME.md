@@ -8,7 +8,7 @@ A web application that takes your birthday, calculates the ``day of the week`` y
  > Wendy Munyasi
 
  ## Setup.
- > ``git clonehttps://github.com/wendymunyasi/Akan-IP2.git``
+ git clone https://github.com/wendymunyasi/Akan-IP2.git``
  
  ``extract the file``
  
