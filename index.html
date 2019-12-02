@@ -6,58 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Akan Name</title>
+    <title>AKAN PROJECT</title>
     
 
 </head>
 <body>
     <div class="container">
-    <div class="jumbotron" id="top">
-    <h1>Akan Naming Culture</h1> 
-    <p class="pp">Akan Name comes from a traditional naming system for Ghana.A child's name is determined by factors</br>surrounding his or her birth.For example,the day of their birth or the manner in which</br>they were born may determine which name they get irrespective of their gender</p>
-    </div>
-    <div class="container-fluid">
+        <div class="jumbotron" id="top">
+        <h1><strong>AKAN PROJECT</strong></h1> 
+        <p class="pp">This is a web application that takes a user's birthday and calculates the day of the week they were born and<br>then depending on their gender outputs their Akan Name. </p>
+        </div>
+        <div class="container-fluid">
         <h3>Filling out the form below will give you your Akan name so c'mon give it a try!</h3>
 
-     <div class="output">
-         <form onsubmit="event.preventDefault()">
-            <div class="form-group">
-                <label for="year">Year</label>
-                <input type="text"
-                required
-                id="year"
-                max="2019"
-                min="1990"
-                placeholder="1980"
-                max-length="4"
-                min-length="4"
-                class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="month">Month</label>
-                <input type="text"
-                placeholder="01"
-                id="month"
-                maxlength="2"
-                min="1"
-                max="12"
-                min-length="1"
-                required
-                 class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="day">Day</label>
-                <input type="text"
-                id="day"
-                placeholder="05"
-                min="1"
-                max="31"
-                min-length="1"
-                max-length="2"
-                required
-                 class="form-control">
-            </div>
-            <div class="form-group">
+        <div class="output">
+            <form onsubmit="event.preventDefault()">
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="text"
+                    required
+                    id="year"
+                    max="2019"
+                    min="1000"
+                    placeholder="1995"
+                    max-length="4"
+                    min-length="4"
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="month">Month</label>
+                    <input type="text"
+                    placeholder="05"
+                    id="month"
+                    maxlength="2"
+                    min="1"
+                    max="12"
+                    min-length="1"
+                    required
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="day">Day</label>
+                    <input type="text"
+                    id="day"
+                    placeholder="14"
+                    min="1"
+                    max="31"
+                    min-length="1"
+                    max-length="2"
+                    required
+                     class="form-control">
+                </div>
+                <div class="form-group">
                     <div>
 					<label for="radio" class="radio-inline">
 					<input
@@ -84,12 +84,11 @@
             <button type="submit" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">submit</button>
             <button type="Reset" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">Reset</button>
            </form>
-           </div>
-           </div>
-          </div>
+        </div>
+        </div>
+    </div>
           <footer>
-            <div class="footer">
-            </div>
+            <div class="footer"></div>
           </footer>
 <script src="main.js"></script>
 </body>
