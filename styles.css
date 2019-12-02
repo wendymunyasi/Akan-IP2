@@ -43,7 +43,7 @@ button[type=submit] {
   cursor: pointer;
   font-size:20px;
 }
-button[type=reset]{
+button[type=reset] {
   background-color:grey;
   color: white;
   padding: 10px 15px;
@@ -54,24 +54,24 @@ button[type=reset]{
   margin-left:40px;
 }
 
-  input[type=radio]{
+input[type=radio] {
       font-size:20px;
-  }
-  .footer{
-    background-color:burlywood;
-    text-align: center;
-    color: black;
-    padding-bottom: 2%;
-    width: 100%;
-    padding: 20px;
-    font-size: 20px;
-    margin-top:20px;
-  }
-  body{
-    background-color:rgba(240,240,240);
-    background-repeat:no-repeat;
-    background-size: cover;
-  }
+}
+.footer{
+  background-color: tomato;
+  text-align: center;
+  color: black;
+  padding-bottom: 2%;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  margin-top:20px;
+}
+body{
+  background-color:rgba(240,240,240);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
     
   
   
